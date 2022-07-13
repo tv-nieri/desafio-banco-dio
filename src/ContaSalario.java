@@ -11,6 +11,7 @@ public class ContaSalario extends Conta{
 		super.imprimeInfo();
 	}
 	
+	@Override
 	public void saca(double valor) {
 		if (valor > this.saldo) {
 			System.out.println("Saldo insuficiente.\nContas do tipo salário não tem limite.");
